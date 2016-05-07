@@ -1,0 +1,4 @@
+__pycache__/
+.idea
+geomag70_windows/in.txt
+geomag70_windows/out.txt
