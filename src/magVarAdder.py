@@ -53,7 +53,7 @@ class MagVarAdder:
     def run_geomag():
         output = subprocess.check_output(
             'cd ../geomag70_windows &' +
-            'geomag70.exe IGRF12.COF f in.txt out.txt',
+            'geomag70.exe WMM2015.COF f in.txt out.txt',
             shell=True)
         return output
 
