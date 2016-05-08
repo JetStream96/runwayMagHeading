@@ -120,7 +120,7 @@ class MagVarAdder:
 
             (csv_line_num, pos), (_, _, heading_true) = \
                 self.__items_to_compute[i-1]
-            heading_mag = str(heading_true - mag_var)
+            heading_mag = str((heading_true - mag_var) % 360.0)
 
             if pos == 1:
                 self.__mag_heading_first[csv_line_num] = heading_mag

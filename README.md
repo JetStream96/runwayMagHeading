@@ -6,6 +6,7 @@ runway_data/runways_with_true_heading.csv: Converted runway file with 2016 magne
 
 ### Usage
 On Windows, run main.py and an output file will be generated at runway_data/runways_with_true_heading.csv
+14th and 21st columns in the .csv are the magnetic headings, with values between 0.0 and 360.0.
 
 Magnetic variation changes over time. The year is set to 2016 in the follwing line in main.py:
 ```
