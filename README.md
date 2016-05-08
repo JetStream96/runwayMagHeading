@@ -9,7 +9,7 @@ On Windows, run main.py and an output file will be generated at runway_data/runw
 
 Magnetic variation changes over time. The year is set to 2016 in the follwing line in main.py:
 ```
-a.generate_input_file('2016')
+year = '2016'
 ```
 
 The year can be changed and its can be:

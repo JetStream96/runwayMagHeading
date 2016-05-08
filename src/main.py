@@ -1,11 +1,15 @@
-from magVarAdder import *
+from magVarAdder import MagVarAdder
 
-a = MagVarAdder()
-a.scan_rwy_file()
-a.generate_input_file('2016')
+# Use decimal (2017, 2019.8855) or
+# YYYY,MM,DD (2018,4,7)
+year = '2016'
+
+adder = MagVarAdder()
+adder.scan_rwy_file()
+adder.generate_input_file(year)
 print('Computing magnetic variation ...')
-a.run_geomag()
-a.import_output_file()
-a.write_to_csv()
+adder.run_geomag()
+adder.import_output_file()
+adder.write_to_csv()
 print('Output generated: runway_data/runways_with_true_heading.csv')
 input("Press Enter to continue...")
